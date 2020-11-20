@@ -1,5 +1,4 @@
 body{
-    padding: 0 auto;
     margin: 0 auto;
     max-width: 700px;
     background-color: gainsboro;
@@ -32,11 +31,11 @@ p code, h2 code {
   }
 
 .exampleCode{
-    font-family: Consolas,"courier new";
+    font-family: Consolas,"courier new" !important;
     padding: 20px;
     display: block;
-    background-color: #222222;
-    color: #22EE22;
+    background-color: #223344 !important;
+    color: #aaff99 !important;
 }
 
 .result{
@@ -49,11 +48,11 @@ ol {
     list-style: none;
     counter-reset: item;
   }
-  li {
+li {
     counter-increment: item;
     margin-bottom: 10px;
-  }
-  li:before {
+    }
+li:before {
     margin-top: 20px;
     margin-bottom: 10px;
     margin-right: 10px;
@@ -64,8 +63,13 @@ ol {
     width: 1.2em;
     text-align: center;
     display: inline-block;
-  }
-  li h2{
-      display: inline;
-      color: teal;
-  }
+    }
+li h2{
+    display: inline;
+    color: teal;
+    font-size: 1.9em;
+}
+
+pre{
+    margin: auto -20px auto -60px;
+}
