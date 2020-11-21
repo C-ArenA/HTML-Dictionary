@@ -6,7 +6,8 @@
     <title>&lt;hr&gt; Tag</title>
     <link rel="stylesheet" href="../css/style.css">
     
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js"></script>
+    <link id="codeTheme" rel="stylesheet" href="../highlightCSS/railscasts.css">
+    <script src="../js/highlight.pack.js"></script>
 </head>
 <body>
     
@@ -44,5 +45,10 @@
     </footer>
 
     <script>hljs.initHighlightingOnLoad();</script>
+
+    <script>
+        codeStyleElement = document.getElementById("codeTheme")
+        console.log(codeStyleElement);
+    </script>
 </body>
 </html>
